@@ -297,7 +297,7 @@ body{
 .form-user__reg{
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 12px 0;
+    padding: 16px 0;
 }
 
 .form-user__reg::-webkit-scrollbar{
