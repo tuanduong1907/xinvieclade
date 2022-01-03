@@ -36,20 +36,20 @@ body{
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     user-select: none;
-    transition: all linear .1s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-transition: all linear .1s;
-    -moz-transition: all linear .1s;
-    -ms-transition: all linear .1s;
-    -o-transition: all linear .1s;
 }
 
 .btn:hover {
-    filter: brightness(105%);
-    -webkit-filter: brightness(105%);
+    filter: brightness(107%);
+    -webkit-filter: brightness(107%);
+    transition: linear .1s;
+    -webkit-transition: linear .1s;
+    -moz-transition: linear .1s;
+    -ms-transition: linear .1s;
+    -o-transition: linear .1s;
 }
 
 
@@ -297,7 +297,7 @@ body{
 .form-user__reg{
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 12px 0;
+    padding: 16px 0;
 }
 
 .form-user__reg::-webkit-scrollbar{

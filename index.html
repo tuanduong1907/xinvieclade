@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xin Việc Là Dễ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./assets/image/logo.png">
     <link rel="stylesheet" href="./assets/css/resest.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/toast-mesage.css">
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 <body>
@@ -283,7 +285,7 @@
                         <div class="container__category-item">
                             <img src="https://images.unsplash.com/photo-1573495804683-641191e042ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="" class="container__category-img">
                             <h2 class="container__category-title">
-                                    Chuyên Viên Tài Chính ( Kế Hoạch -Chính Sách Bán Hàng)
+                                    Chuyên Viên Tài Chính ( Kế Hoạch -Chính Sách Bán Hàng) 
                             </h2>
                             <p class="container__category-desc">
                                     Công ty cổ phần bảo vệ thực vật Sài Gòn
@@ -370,6 +372,7 @@
                     </div>
                     </div>
                 </div>
+                <div id="toast"></div>
                 
                 <footer class="footer">
                     <p class="footer__name">
@@ -389,6 +392,7 @@
 
 <!-- JAVASCRIP FILE -->
 <script src="./assets/js/validation.js"></script>
+<script src="./assets/js/toast.js"></script>
 <script src="./assets/js/main.js"></script>
 
 <!-- JAVASCRIP CUSTOM -->
@@ -422,6 +426,7 @@
             Validator.isRequired('#user-reg__email', 'Vui lòng nhập email của bạn'),
             Validator.isEmail('#user-reg__email'),
             Validator.isRequired('#user-reg__phone', 'Vui lòng nhập số điện thoại của bạn'),
+            Validator.minLength('#user-reg__phone', 10),
             Validator.isRequired('#user-reg__password', 'Vui lòng nhập mật khẩu của bạn'),
             Validator.minLength('#user-reg__password', 5),
             Validator.isRequired('#user-reg__confirm-password','Vui lòng nhập mật khẩu của bạn'),
@@ -434,6 +439,23 @@
             console.log(data)
         }
     });
+</script>
+<script>
+    function showSuccessToast() {
+        for(let i in inputValues) {
+            if(inputValues[i].value > 1 ) {
+                handleOpenModalLogin()
+                handleCloseModalreg()
+                inputValues[i].value = ''
+                toast({
+                    title: "Thành công!",
+                    message: "Bạn đã đăng ký thành công, đăng nhập tại đây",
+                    type: "success",
+                    duration: 5000
+                });
+            }
+        }
+    }
 </script>
 </body>
 </html>

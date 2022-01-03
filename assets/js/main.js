@@ -106,7 +106,7 @@ const templateFormUserReg = `
                 <input type="password" placeholder="Nhập lại mật khẩu..." name="user-reg__confirm-password" id="user-reg__confirm-password" class="form__login-input">
                 <span class="form-message"></span>
             </div>
-            <button class="btn form__button">Đăng Ký</button>
+            <button onClick="showSuccessToast()" class="btn form__button">Đăng Ký</button>
             <div class="form__option--reg">
                 <span>Bạn đã có tài khoản ?</span>
                 <span id="login-user-btn" class="form__option-item">Đăng nhập</span>

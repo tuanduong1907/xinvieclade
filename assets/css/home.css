@@ -146,7 +146,14 @@
     margin-top: 16px;
     font-size: 1.8rem;
     line-height: 2.8rem;
+    height: 5.6rem;
     color: var(--primary-heading);
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .container__category-desc{
