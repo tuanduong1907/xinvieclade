@@ -339,7 +339,7 @@ dropdowns.forEach(item => {
     dropdownItems.forEach(it => it.addEventListener('click', (e) => {
         const text = e.target.textContent
         dropdownSelecteds.textContent = text
-        dropdownList.style.height = `0px`
+        showDropdownList()
         
     }))
     // Function
@@ -349,7 +349,6 @@ dropdowns.forEach(item => {
         if(!dropdownList.classList.contains('active')) {
             dropdownList.style.height = `0px`
         }
-        dropdownList.classList.toggle('active')
     }
 })
 
