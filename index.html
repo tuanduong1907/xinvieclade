@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./assets/image/logo.png">
     <link rel="stylesheet" href="./assets/css/resest.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/toast-mesage.css">
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 <body>
@@ -392,70 +391,9 @@
 
 <!-- JAVASCRIP FILE -->
 <script src="./assets/js/validation.js"></script>
-<script src="./assets/js/toast.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/form.js"></script>
 
 <!-- JAVASCRIP CUSTOM -->
-<!-- Validator  -->
-<script>
-    // Login
-    Validator({
-        form: '#user-login',
-        formGroupSelector: '.form-group',
-        errorSelector: '.form-message',
-        rules: [
-            Validator.isRequired('#user-login__email', 'Vui lòng nhập email của bạn'),
-            Validator.isEmail('#user-login__email'),
-            Validator.isRequired('#user-login__password', 'Vui lòng nhập mật khẩu của bạn')
-            
-        ],
-        onSubmit: function(data) {
-            // Call Api
-            console.log(data)
-        }
-    });
 
-    // Reg
-    Validator({
-        form: '#user-reg',
-        formGroupSelector: '.form-group',
-        errorSelector: '.form-message',
-        rules: [
-            Validator.isRequired('#user-reg__fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-            Validator.minLength('#user-reg__fullname', 6),
-            Validator.isRequired('#user-reg__email', 'Vui lòng nhập email của bạn'),
-            Validator.isEmail('#user-reg__email'),
-            Validator.isRequired('#user-reg__phone', 'Vui lòng nhập số điện thoại của bạn'),
-            Validator.minLength('#user-reg__phone', 10),
-            Validator.isRequired('#user-reg__password', 'Vui lòng nhập mật khẩu của bạn'),
-            Validator.minLength('#user-reg__password', 5),
-            Validator.isRequired('#user-reg__confirm-password','Vui lòng nhập mật khẩu của bạn'),
-            Validator.isComfirmed('#user-reg__confirm-password', function() {
-                return document.querySelector('#user-reg #user-reg__password').value
-            }, 'Mật khẩu nhập lại không chính xác')
-        ],
-        onSubmit: function(data) {
-            // Call Api
-            console.log(data)
-        }
-    });
-</script>
-<script>
-    function showSuccessToast() {
-        for(let i in inputValues) {
-            if(inputValues[i].value > 1 ) {
-                handleOpenModalLogin()
-                handleCloseModalreg()
-                inputValues[i].value = ''
-                toast({
-                    title: "Thành công!",
-                    message: "Bạn đã đăng ký thành công, đăng nhập tại đây",
-                    type: "success",
-                    duration: 5000
-                });
-            }
-        }
-    }
-</script>
 </body>
 </html>

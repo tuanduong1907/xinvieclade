@@ -187,7 +187,7 @@ body{
     background-color: var(--primary-heading);
     border-radius: 16px;
     animation: sideUp 1s linear;
-    -webkit-animation: sideUp 1s linear;
+    -webkit-animation: sideUp .75s linear;
 }
 
 @keyframes sideUp {
@@ -235,6 +235,7 @@ body{
     box-shadow: 0px 0px 30px rgba(12, 14, 32, 0.03);
     border-radius: 40px 0px 0px 0px;
     overflow-y: scroll;
+    
 }
 
 
@@ -244,7 +245,7 @@ body{
 }
 
 .container__content::-webkit-scrollbar-thumb {
-    background: var(--sub-text);
+    background: var(--primary-color);
     border-radius: 10px;
     transition: all 0.55s linear;
   }
@@ -282,6 +283,8 @@ body{
 
 /* ----- LOGIN MODAL SECTION ----- */
 
+.form-employer__reg,
+.form-employer__login,
 .form-user__reg,
 .form-user__login{
     position: fixed;
@@ -289,22 +292,27 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: 9999;
     background-color: rgba(0, 0, 0, .7);
     display: flex;
     cursor: zoom-out;
     visibility: hidden;
 }
+
+.form-employer__reg,
 .form-user__reg{
     overflow-y: auto;
     overflow-x: hidden;
     padding: 16px 0;
 }
 
+.form-employer__reg::-webkit-scrollbar,
 .form-user__reg::-webkit-scrollbar{
     visibility: hidden;
 }
 
-
+.form-employer__reg.active,
+.form-employer__login.active,
 .form-user__reg.active,
 .form-user__login.active{
     visibility: visible;
@@ -458,3 +466,68 @@ body{
     font-size: 1.6rem;
 }
 
+.form__tittle-reg {
+    font-size: 1.4rem;
+    color: var(--sub-text);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.dropdown {
+    margin-top: 12px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.dropdown__location {
+    
+}
+
+.dropdown__select {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+.dropdown__list {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    height: 0;
+    overflow: hidden;
+    transition: all linear .25s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: all linear .25s;
+    -moz-transition: all linear .25s;
+    -ms-transition: all linear .25s;
+    -o-transition: all linear .25s;
+}
+
+.dropdown__list.active {
+    height: auto;
+}
+
+.dropdown__item {
+    padding: 10px;
+}
+
+.dropdown__text {
+
+}
