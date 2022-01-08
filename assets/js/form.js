@@ -339,7 +339,7 @@ dropdowns.forEach(item => {
     dropdownItems.forEach(it => it.addEventListener('click', (e) => {
         const text = e.target.textContent
         dropdownSelecteds.textContent = text
-        dropdownList.style.height = `0px`
+        showDropdownList()
         
     }))
     // Function
@@ -349,7 +349,6 @@ dropdowns.forEach(item => {
         if(!dropdownList.classList.contains('active')) {
             dropdownList.style.height = `0px`
         }
-        dropdownList.classList.toggle('active')
     }
 })
 
@@ -381,9 +380,6 @@ formEmployerReg.addEventListener('click', ()=> {
 
 const formLoginContent = document.querySelectorAll('.form_login-content')
 formLoginContent.forEach(item => item.addEventListener('click',handlePreventBubbling))
-function handlePreventBubbling(e) {
-    e.stopPropagation()
-}
 const btnFormClose = document.querySelectorAll('.form__close')
 btnFormClose.forEach(item => item.addEventListener('click', handleCloseModalreg))
 btnFormClose.forEach(item => item.addEventListener('click', handleCloseModalLogin))

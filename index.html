@@ -9,19 +9,24 @@
     <link rel="shortcut icon" href="./assets/image/logo.png">
     <link rel="stylesheet" href="./assets/css/resest.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 <body>
     <div id="main">
         <!-- HEADER SECTION -->
         <header class="header">
-            <div class="header__logo">
+            <div class="header__logo hidden-tl-mb">
                 <a href="#">
                     <img src="./assets/image/logo2.png" alt="">
-                    
                 </a>
             </div>
             <div class="header__nav-list">
+                <svg class="btn-menu-mobile show-tl-mb" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 8H6" stroke="#2F383A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 12H3" stroke="#2F383A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 16H6" stroke="#2F383A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                 <div class="header__search">
                     <img src="./assets/image/search-icon.svg" class="header__search-icon">
                     <input type="text" class="header__search-input"  placeholder="Tìm Kiếm...">
@@ -34,6 +39,15 @@
         <!-- CONTAINER SECTION -->
         <div class="container">
             <ul class="container__list-menu">
+                <svg class="container__list-menu-close hidden-pc" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.16998 14.8299L14.83 9.16992" stroke="#D80000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.16998 14.8299L14.83 9.16992" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.83 14.8299L9.16998 9.16992" stroke="#D80000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.83 14.8299L9.16998 9.16992" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#D80000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
                 <li class="container__menu-item ">
                     <a href="#" class="container__menu-item-link container__menu-item-link--active">
                         <svg class="container__menu-item-icon container__menu-item-icon--active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,27 +129,84 @@
             <div class="container__content">
                 <!-- Slider -->
                 <div class="container__slider">
-                    <div class="container__slider-content">
-                        <h1 class="container__slider-heading">
-                            Hồ Sơ Xin Việc Quan Trọng Như Thế Nào ?
-                        </h1>
-                        <p class="container__slider-text">
-                            Ngày nay ứng viên đã biết chăm chút hơn cho bản hồ sơ xin việc để nâng cao cơ hội cho bản thân. Tuy nhiên với những người mới thì họ lại chưa nhận ra tầm quan trọng của bộ hồ sơ này.
-                        </p>
-                        <button class="btn container__btn-slider">
-                            Tạo Ngay
-                            <svg class="container__btn-slider-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 8.5V13.63C20.11 12.92 18.98 12.5 17.75 12.5C16.52 12.5 15.37 12.93 14.47 13.66C13.26 14.61 12.5 16.1 12.5 17.75C12.5 18.73 12.78 19.67 13.26 20.45C13.63 21.06 14.11 21.59 14.68 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 11H13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 16H9.62" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M23 17.75C23 18.73 22.72 19.67 22.24 20.45C21.96 20.93 21.61 21.35 21.2 21.69C20.28 22.51 19.08 23 17.75 23C16.6 23 15.54 22.63 14.68 22C14.11 21.59 13.63 21.06 13.26 20.45C12.78 19.67 12.5 18.73 12.5 17.75C12.5 16.1 13.26 14.61 14.47 13.66C15.37 12.93 16.52 12.5 17.75 12.5C18.98 12.5 20.11 12.92 21 13.63C22.22 14.59 23 16.08 23 17.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.75 20.25C17.75 18.87 18.87 17.75 20.25 17.75C18.87 17.75 17.75 16.63 17.75 15.25C17.75 16.63 16.63 17.75 15.25 17.75C16.63 17.75 17.75 18.87 17.75 20.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                    <div class="container__slider-item">
+                        <div class="container__slider-content">
+                            <h1 class="container__slider-heading">
+                                Hồ Sơ Xin Việc Quan Trọng Như Thế Nào ?
+                            </h1>
+                            <p class="container__slider-text">
+                                Ngày nay ứng viên đã biết chăm chút hơn cho bản hồ sơ xin việc để nâng cao cơ hội cho bản thân. Tuy nhiên với những người mới thì họ lại chưa nhận ra tầm quan trọng của bộ hồ sơ này.
+                            </p>
+                            <button class="btn container__btn-slider">
+                                Tạo Ngay
+                                <svg class="container__btn-slider-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8.5V13.63C20.11 12.92 18.98 12.5 17.75 12.5C16.52 12.5 15.37 12.93 14.47 13.66C13.26 14.61 12.5 16.1 12.5 17.75C12.5 18.73 12.78 19.67 13.26 20.45C13.63 21.06 14.11 21.59 14.68 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11H13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 16H9.62" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 17.75C23 18.73 22.72 19.67 22.24 20.45C21.96 20.93 21.61 21.35 21.2 21.69C20.28 22.51 19.08 23 17.75 23C16.6 23 15.54 22.63 14.68 22C14.11 21.59 13.63 21.06 13.26 20.45C12.78 19.67 12.5 18.73 12.5 17.75C12.5 16.1 13.26 14.61 14.47 13.66C15.37 12.93 16.52 12.5 17.75 12.5C18.98 12.5 20.11 12.92 21 13.63C22.22 14.59 23 16.08 23 17.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.75 20.25C17.75 18.87 18.87 17.75 20.25 17.75C18.87 17.75 17.75 16.63 17.75 15.25C17.75 16.63 16.63 17.75 15.25 17.75C16.63 17.75 17.75 18.87 17.75 20.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="container__slider-img-wrap">
+                            
+                            <img src="./assets/image/slider-img-1.png" alt="" class="container__slider-img">
+                        </div>
                     </div>
-                    <img src="./assets/image/slider-img-1.png" alt="" class="container__slider-img">
+                    <div class="container__slider-item">
+                        <div class="container__slider-content">
+                            <h1 class="container__slider-heading">
+                                Hồ Sơ Xin Việc Quan Trọng Như Thế Nào ?
+                            </h1>
+                            <p class="container__slider-text">
+                                Ngày nay ứng viên đã biết chăm chút hơn cho bản hồ sơ xin việc để nâng cao cơ hội cho bản thân. Tuy nhiên với những người mới thì họ lại chưa nhận ra tầm quan trọng của bộ hồ sơ này.
+                            </p>
+                            <button class="btn container__btn-slider">
+                                Tạo Ngay
+                                <svg class="container__btn-slider-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8.5V13.63C20.11 12.92 18.98 12.5 17.75 12.5C16.52 12.5 15.37 12.93 14.47 13.66C13.26 14.61 12.5 16.1 12.5 17.75C12.5 18.73 12.78 19.67 13.26 20.45C13.63 21.06 14.11 21.59 14.68 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11H13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 16H9.62" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 17.75C23 18.73 22.72 19.67 22.24 20.45C21.96 20.93 21.61 21.35 21.2 21.69C20.28 22.51 19.08 23 17.75 23C16.6 23 15.54 22.63 14.68 22C14.11 21.59 13.63 21.06 13.26 20.45C12.78 19.67 12.5 18.73 12.5 17.75C12.5 16.1 13.26 14.61 14.47 13.66C15.37 12.93 16.52 12.5 17.75 12.5C18.98 12.5 20.11 12.92 21 13.63C22.22 14.59 23 16.08 23 17.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.75 20.25C17.75 18.87 18.87 17.75 20.25 17.75C18.87 17.75 17.75 16.63 17.75 15.25C17.75 16.63 16.63 17.75 15.25 17.75C16.63 17.75 17.75 18.87 17.75 20.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="container__slider-img-wrap">
+                            
+                            <img src="./assets/image/slider-img-1.png" alt="" class="container__slider-img">
+                        </div>
+                    </div>
+                    <div class="container__slider-item">
+                        <div class="container__slider-content">
+                            <h1 class="container__slider-heading">
+                                Hồ Sơ Xin Việc Quan Trọng Như Thế Nào ?
+                            </h1>
+                            <p class="container__slider-text">
+                                Ngày nay ứng viên đã biết chăm chút hơn cho bản hồ sơ xin việc để nâng cao cơ hội cho bản thân. Tuy nhiên với những người mới thì họ lại chưa nhận ra tầm quan trọng của bộ hồ sơ này.
+                            </p>
+                            <button class="btn container__btn-slider">
+                                Tạo Ngay
+                                <svg class="container__btn-slider-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8.5V13.63C20.11 12.92 18.98 12.5 17.75 12.5C16.52 12.5 15.37 12.93 14.47 13.66C13.26 14.61 12.5 16.1 12.5 17.75C12.5 18.73 12.78 19.67 13.26 20.45C13.63 21.06 14.11 21.59 14.68 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 11H13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 16H9.62" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 17.75C23 18.73 22.72 19.67 22.24 20.45C21.96 20.93 21.61 21.35 21.2 21.69C20.28 22.51 19.08 23 17.75 23C16.6 23 15.54 22.63 14.68 22C14.11 21.59 13.63 21.06 13.26 20.45C12.78 19.67 12.5 18.73 12.5 17.75C12.5 16.1 13.26 14.61 14.47 13.66C15.37 12.93 16.52 12.5 17.75 12.5C18.98 12.5 20.11 12.92 21 13.63C22.22 14.59 23 16.08 23 17.75Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.75 20.25C17.75 18.87 18.87 17.75 20.25 17.75C18.87 17.75 17.75 16.63 17.75 15.25C17.75 16.63 16.63 17.75 15.25 17.75C16.63 17.75 17.75 18.87 17.75 20.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="container__slider-img-wrap">
+                            
+                            <img src="./assets/image/slider-img-1.png" alt="" class="container__slider-img">
+                        </div>
+                    </div>
                 </div>
                 <div class="container__body">
                    <!-- Option -->
@@ -374,15 +445,15 @@
                 <div id="toast"></div>
                 
                 <footer class="footer">
-                    <p class="footer__name">
+                    <a href="index.html" class="footer__name">
                         Xinvieclade © 2021
-                    </p>
+                    </a>
                     <div class="footer__social">
-                        <img src="./assets/image/facebook-icon.svg" alt="">
-                        <img src="./assets/image/Instagram-icon.svg" alt="">
-                        <img src="./assets/image/zalo-icon.svg" alt="">
-                        <img src="./assets/image/tiktok-icon.svg" alt="">
-                        <img src="./assets/image/YouTube-icon.svg" alt="">
+                        <a href="#"><img src="./assets/image/facebook-icon.svg" alt=""></a>
+                        <a href="#"><img src="./assets/image/Instagram-icon.svg" alt=""></a>
+                        <a href="#"><img src="./assets/image/zalo-icon.svg" alt=""></a>
+                        <a href="#"><img src="./assets/image/tiktok-icon.svg" alt=""></a>
+                        <a href="#"><img src="./assets/image/YouTube-icon.svg" alt=""></a>
                     </div>
                 </footer>
             </div>
@@ -391,7 +462,12 @@
 
 <!-- JAVASCRIP FILE -->
 <script src="./assets/js/validation.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/base.js"></script>
 <script src="./assets/js/form.js"></script>
+<script src="./assets/js/home.js"></script>
 
 <!-- JAVASCRIP CUSTOM -->
 
