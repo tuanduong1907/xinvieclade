@@ -26,3 +26,27 @@ window.addEventListener('load', function() {
     });
   });  
 })
+
+if ( $(window).width() < 740) {     
+    $(document).ready(function(){
+      $('.container__category-list').slick({
+          slidesToShow: 1.080,
+          // autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+      });
+    });  
+
+
+    $(document).ready(function(){
+      $('.container__option').slick({
+          slidesToShow: 1.1,
+          // autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+      });
+    });  
+
+}
+
+
