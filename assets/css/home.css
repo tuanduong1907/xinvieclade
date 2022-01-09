@@ -58,7 +58,7 @@
 .container__option-item{
     flex: 1;
     height: 92px;
-    display: flex;
+    display: flex !important;
     padding: 12px;
     align-items: center;
     color: #fff;
@@ -253,6 +253,9 @@
     height: 10px;
 }
 
+.container__category-item.slick-slide {
+    margin-left: 25px;
+}
 
 /* ------------------------------------------------------ */
 /* Responsive */
@@ -379,6 +382,12 @@
     }
     .container__slider-img{
         width: 200px;
+    }
+    .container__option{
+        padding: 0 12px;
+    }
+    .container__category{
+        padding: 12px;
     }
 }
 
