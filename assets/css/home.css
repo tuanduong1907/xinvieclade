@@ -66,16 +66,16 @@
     border-radius: 12px;
 }
 
-.container__option-item:nth-child(1) {
+.container__option-item--1 {
     background-color: #66D1E7;
 
 }
 
-.container__option-item:nth-child(2) {
+.container__option-item--2 {
     background-color: #66E87B;
 }
 
-.container__option-item:nth-child(3) {
+.container__option-item--3 {
     background-color: #DD66E8;
 }
 
@@ -385,6 +385,9 @@
     }
     .container__option{
         padding: 0 12px;
+    }
+    .container__option-item {
+        margin-left: 36px;
     }
     .container__category{
         padding: 12px;
