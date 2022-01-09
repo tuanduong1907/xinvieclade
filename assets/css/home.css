@@ -145,6 +145,7 @@
     height: 178px;
     object-fit: cover;
     border-radius: 12px;
+    width: 100%;
 }
 
 .container__category-title{
