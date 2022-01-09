@@ -51,6 +51,7 @@
 .container__option{
     display: flex;
     margin-top: 32px;
+    margin-bottom: 32px;
     gap: 0 90px;
     padding: 0 70px;
 }
@@ -114,8 +115,8 @@
 
 /* Category */
 .container__category{
-    margin-top: 32px;
     padding: 0 40px;
+    margin-bottom: 32px;
 }
 
 .container__category-heading{
@@ -394,7 +395,9 @@
     }
     .container__category{
         padding: 12px;
+        margin-bottom: -7px;
     }
+
     .container__category-item{
         box-shadow: var(--box-shadow);
         user-select: none !important;
