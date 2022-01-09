@@ -254,7 +254,8 @@
 }
 
 .container__category-item.slick-slide {
-    margin-left: 25px;
+    margin: 25px;
+    margin-right: 0;
 }
 
 /* ------------------------------------------------------ */
@@ -391,6 +392,12 @@
     }
     .container__category{
         padding: 12px;
+    }
+    .container__category-item{
+        box-shadow: var(--box-shadow);
+    }
+    .container__category-list {
+        margin-top: -9px;
     }
 }
 
