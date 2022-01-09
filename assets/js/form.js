@@ -308,12 +308,21 @@ const templateEmployerReg = `
                      </svg>
                      </div>
                      <ul class="dropdown__list">
-                         <li class="dropdown__item">
-                             <span class="dropdown__text">Công Nghệ Thông Tin</span>
-                         </li>
-                         <li class="dropdown__item">
-                             <span class="dropdown__text">Kinh Doanh</span>
-                         </li>
+                        <li class="dropdown__item">
+                            <span class="dropdown__text">IT Phần Cứng / Mạng</span>
+                        </li>
+                        <li class="dropdown__item">
+                            <span class="dropdown__text">IT Phần Mềm</span>
+                        </li>
+                        <li class="dropdown__item">
+                            <span class="dropdown__text">Kinh Doanh / Bán Hàng</span>
+                        </li>
+                        <li class="dropdown__item">
+                        <span class="dropdown__text">Kinh Doanh / Bán Hàng</span>
+                        </li>
+                        <li class="dropdown__item">
+                            <span class="dropdown__text">Điện / Điện Tử / Điện Lạnh</span>
+                        </li>
                      </ul>
                  </div>
              </div>
