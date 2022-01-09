@@ -366,6 +366,7 @@
         padding: 24px 0 24px 24px;
         justify-content: space-between;
         flex-direction: column;
+        user-select: none;
     }
     .container__slider-heading{
         font-size: 3.8rem;
@@ -396,6 +397,7 @@
     }
     .container__category-item{
         box-shadow: var(--box-shadow);
+        user-select: none !important;
     }
     .container__category-list {
         margin-top: -9px;
