@@ -627,6 +627,7 @@ body{
         z-index: 10;
         top: 0;
         left: 0;
+        box-shadow: var(--box-shadow)
     }
     .container {
         flex-direction: column;
