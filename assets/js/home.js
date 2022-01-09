@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
   $(document).ready(function(){
     $('.container__slider').slick({
         slidesToShow: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
