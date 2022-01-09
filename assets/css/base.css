@@ -616,10 +616,28 @@ body{
     textarea {
       font-size: 16px!important;
     }
+    #main {
+        height: 100%;
+        overflow: unset;
 
+    }
+    .header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 88px;
+    }
     .btn{
         min-width: 88px;
         font-size: 1.2rem;
+    }
+    .form-employer__reg, .form-employer__login, .form-user__reg, .form-user__login {
+        height: auto;
+        bottom: 0;
     }
     
 }
